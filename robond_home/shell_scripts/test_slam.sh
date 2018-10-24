@@ -12,7 +12,7 @@ echo 'launching gmapping'
 xterm -e "roslaunch turtlebot_gazebo gmapping_demo.launch" &
 sleep 2
 
-echo 'launching navigation'
+echo 'launching rviz'
 xterm -e "roslaunch turtlebot_rviz_launchers view_navigation.launch" &
 sleep 2
 

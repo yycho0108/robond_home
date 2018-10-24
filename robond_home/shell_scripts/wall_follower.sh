@@ -16,7 +16,7 @@ xterm -e "roslaunch robond_home gmapping.launch" &
 #xterm -e "roslaunch robond_home hector_mapping.launch" &
 sleep 2
 
-echo 'launching navigation'
+echo 'launching rviz'
 xterm -e "roslaunch turtlebot_rviz_launchers view_navigation.launch" &
 sleep 2
 
