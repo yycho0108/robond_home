@@ -1,0 +1,5 @@
+<launch>
+	<node pkg="robond_home" type="wall_follower" name="wall_follower" output="screen">
+		<remap from="cmd_vel" to="/mobile_base/commands/velocity"/>
+	</node>
+</launch>

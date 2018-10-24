@@ -21,4 +21,4 @@ xterm -e "roslaunch turtlebot_rviz_launchers view_navigation.launch" &
 sleep 2
 
 echo 'launching follower'
-xterm -e "rosrun robond_home wall_follower cmd_vel:=/mobile_base/commands/velocity"
+xterm -e "roslaunch robond_home wall_follower.launch"

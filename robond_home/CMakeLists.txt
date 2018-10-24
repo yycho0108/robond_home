@@ -2,11 +2,12 @@ cmake_minimum_required(VERSION 2.8.3)
 project(robond_home)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
-# add_compile_options(-std=c++11)
+add_compile_options(-std=c++11)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
+
 find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
   roscpp
@@ -16,6 +17,9 @@ find_package(catkin REQUIRED COMPONENTS
   tf
   tf2_ros
   tf_conversions
+
+  move_base_msgs
+  actionlib
 )
 
 ## System dependencies are found with CMake's conventions
@@ -141,6 +145,10 @@ include_directories(
 
 add_executable(wall_follower src/wall_follower/wall_follower.cpp)
 target_link_libraries(wall_follower
+	${catkin_LIBRARIES})
+
+add_executable(pick_objects src/pick_objects/pick_objects.cpp)
+target_link_libraries(pick_objects
 	${catkin_LIBRARIES})
 
 ## Rename C++ executable without prefix

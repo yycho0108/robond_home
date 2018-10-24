@@ -1,0 +1,3 @@
+<launch>
+	<node pkg="robond_home" type="pick_objects" name="pick_objects" output="screen"/>
+</launch>
