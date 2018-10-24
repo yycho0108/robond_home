@@ -1,0 +1,3 @@
+<launch>
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find robond_home)/rviz_config/navigation.rviz"/>
+</launch>

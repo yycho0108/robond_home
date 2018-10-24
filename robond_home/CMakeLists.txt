@@ -20,6 +20,8 @@ find_package(catkin REQUIRED COMPONENTS
 
   move_base_msgs
   actionlib
+
+  visualization_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -149,6 +151,10 @@ target_link_libraries(wall_follower
 
 add_executable(pick_objects src/pick_objects/pick_objects.cpp)
 target_link_libraries(pick_objects
+	${catkin_LIBRARIES})
+
+add_executable(add_markers src/add_markers/add_markers.cpp)
+target_link_libraries(add_markers
 	${catkin_LIBRARIES})
 
 ## Rename C++ executable without prefix

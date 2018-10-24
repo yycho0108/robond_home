@@ -636,6 +636,15 @@
       </link>
       <static>1</static>
     </model>
+
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose frame=''>0.909907 3.30123 20.0686 -1.1e-05 1.5698 1.53218</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
+
     <state world_name='default'>
       <sim_time>36 445000000</sim_time>
       <real_time>36 526311731</real_time>
