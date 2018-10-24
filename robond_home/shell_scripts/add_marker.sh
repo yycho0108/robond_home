@@ -12,9 +12,10 @@ echo 'launching AMCL'
 xterm -e "roslaunch turtlebot_gazebo amcl_demo.launch map_file:=$(rospack find robond_home)/world/map.yaml" &
 
 echo 'launching RViz'
-xterm -e "roslaunch turtlebot_rviz_launchers view_navigation.launch" &
+#xterm -e "roslaunch turtlebot_rviz_launchers view_navigation.launch" &
+xterm -e "roslaunch robond_home rviz.launch" &
 sleep 2
 
 echo 'launching Marker Visualization'
-xterm -e "rosrun robond_home add_marker" &
+xterm -e "rosrun robond_home add_markers" &
 sleep 2

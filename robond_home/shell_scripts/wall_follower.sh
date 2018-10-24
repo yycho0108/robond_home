@@ -11,13 +11,11 @@ sleep 5
 echo 'launching gmapping'
 #xterm -e "roslaunch turtlebot_gazebo gmapping_demo.launch" &
 xterm -e "roslaunch robond_home gmapping.launch" &
-
-#echo 'launching hector mapping'
-#xterm -e "roslaunch robond_home hector_mapping.launch" &
 sleep 2
 
 echo 'launching rviz'
-xterm -e "roslaunch turtlebot_rviz_launchers view_navigation.launch" &
+#xterm -e "roslaunch turtlebot_rviz_launchers view_navigation.launch" &
+xterm -e "roslaunch robond_home rviz.launch" &
 sleep 2
 
 echo 'launching follower'
